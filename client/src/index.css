@@ -1,0 +1,17 @@
+/* Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+    width: 5px; /* adjust the width of the scrollbar */
+    height: 8px; /* adjust the height of the scrollbar */
+    background-color: transparent; /* set the background color to transparent */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #121212; /* set the color of the scrollbar thumb to gray */
+    border-radius: 10px; /* add a rounded corner to the scrollbar thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa; /* set the hover color of the scrollbar thumb to a darker gray */
+  }
+  
+  

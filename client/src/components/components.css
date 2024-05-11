@@ -1,0 +1,492 @@
+:root{
+    --green-bg:rgb(76, 255 ,76);
+}
+.main-profilecard{
+    padding: 5px 10px;
+    border: 1px solid rgb(153, 153, 153);
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    transition: .1s linear;
+    position: fixed;
+    top: 100px;
+    backdrop-filter: blur(20px);
+    left:100px;
+}
+.main-profilecard:hover{
+    border: 1px solid var(--green-bg);
+}
+.profilecard-intro{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profilecard-intro>h2{
+    width: 100px;
+    font-weight: bold;
+}
+.profilecard-intro>a{
+    color: rgb(205, 205, 205);
+    font-size: small;
+}
+.profilecard-image{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.profilecard-image>img{
+    width: 200px;
+    border-radius: 20%;
+    height: 150px;
+    object-fit: cover;
+}
+.profilecard-contact{
+    margin-top: 15px;
+}
+.profilecard-contact>p{
+    display: flex;
+    justify-content: center;
+}
+.profilecard-links{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+.profilecard-links>a{
+    color: rgb(197, 195, 195);
+    border: 2px solid rgb(196, 193, 193);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: linear .1s;
+}
+
+.profilecard-links>a:hover{
+    color:var(--green-bg);
+    border: 2px solid var(--green-bg);
+}
+.profilecard-hireme{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.profilecard-hireme>button{
+    background-color:var(--green-bg);
+    padding:5px 10px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightcyan;
+    outline: none;
+    border-radius: 5px;
+}
+.page-label{
+    border: 1px solid white;
+    padding: 2px 15px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: .1s linear;
+    gap: 5px;
+    width: 100px;
+  }
+  .page-label:hover{
+    border: 1px solid var(--green-bg);
+  }
+.Home-main{
+    margin-top: 100px;
+}
+.Home-intro{
+    padding-top:30px;
+    line-height: 20px;
+}
+.Home-intro>h1{
+    font-size:55px;
+}
+.Home-intro-small{
+    color:rgb(190, 185, 185)
+}
+.Home-project{
+    margin-top: 80px;
+}
+.Home-project>button{
+    background: var(--green-bg);
+    color: black;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+}
+/* about page */
+.about-main{
+    width: 100%;
+    padding: 100px 0;
+}
+.about-intro>span>h1{
+    font-size: 35px;
+}
+.about-intro>span>p{
+    width: 100%;
+    text-align: justify;
+    line-height: 25px;
+}
+/* education page */
+.education-tl{
+    margin-top: 60px;
+}
+.tl-date{
+    margin: 0 20px;
+    color:white;
+}
+.tl-icon{
+    background-color: rgb(139, 139, 139);
+    color:black;
+    transition: all .1s;
+}
+.tl-icon:hover{
+    background-color: var(--green-bg);
+    color: white;
+}
+.tl-edu-place,.tl-edu-marks{
+    color:gray;
+
+}
+
+
+/* service page */
+.Services-main{
+    margin-top:100px;
+}
+#Services-speci{
+    font-size: 35px;
+}
+.Service-card{
+    width: 100%;
+    border:2px solid grey;
+    padding: 20px 35px;
+    background-color: transparent;
+    margin-top: 15px;
+    color: white;
+    border-radius: 15px;
+    
+}
+.Service-card:focus{
+    border: 2px solid var(--green-bg);
+}
+.Service-card:focus #name {
+    color: var(--green-bg);
+}
+.service-card-name{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-card-name>a:nth-child(1){
+    font-size: 30px;
+}
+.service-card-desc{
+    display: flex;
+    color:grey
+}
+/* skills page */
+.Skills-main{
+    margin-top: 100px;
+}
+.skill-card-parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+}
+.skill-card-childs{
+
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    border:2px solid gray;
+    transition: linear .2s;
+}
+.skill-card-childs>p{
+    color:gray
+}
+.skill-card-childs:focus{
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--green-bg);
+}
+.skill-child-img{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-child-img>img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.admin-signin-form{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+.admin-signin-form>input[type="text"]{
+    width: 200px;
+    padding:10px 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid gray;
+    transition: .1s all;
+    outline: none;
+}
+.admin-signin-form>h1{
+    color: white;
+   
+}
+.adminpage-outlet{
+    width:90%;
+}
+.admin-signin-form>input[type="text"]:focus{
+    border: 2px solid var(--green-bg);
+    border-radius: 5px;
+}
+.admin-signin-form>button{
+    background: var(--green-bg);
+    width: 200px;
+    padding:10px 20px;
+}
+.adminpage-navs{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: start;
+    gap: 5px;
+    min-height: 100vh;
+    border-right: 8px solid var(--green-bg);
+}
+.adminpage-navs>a{
+    text-decoration: none;
+    background: white;
+    padding:10px 5px;
+    color:black;
+    width:142px;
+}
+.adminpage-navs>.active{
+    color:var(--green-bg)
+}
+.adminpage-main{
+    display: flex;
+}
+.addproject-form{
+    color: rgb(127, 127, 127);
+    display: flex;
+    width: 300px;
+    background-color: white;
+    flex-direction: column;
+    padding: 35px;
+    border-radius: 15px;
+}
+.addproject-form>label{
+    margin-top: 15px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.addproject-form>input[type="text"]{
+    border: 2px solid gray;
+    padding: 15px;
+    outline: none;
+    transition: all .2s;
+}
+.addproject-form>input[type="text"]:focus{
+    border-radius: 10px;
+    border: 2px solid var(--green-bg);
+}
+.addproject-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.addproject-form>button{
+    background: var(--green-bg);
+    margin-top: 25px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.project-table{
+    border: 1px solid var(--green-bg) ;
+   
+    padding: 10px;
+}
+
+.project-table>tr>td{
+    color: white;
+    width: 100px;
+    padding: 5px;
+}
+.project-table>tr>td>a{
+    color: white;
+}
+.project-card{
+    width: 500px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 15px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 10px;
+}
+.project-card>img{
+    width: 500px;
+    border-radius: 15px;
+    height: 250px;
+}
+
+.project-card:hover #pro-type{
+    display: block;
+}
+#pro-type{
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+    transition: all .5s;
+}
+.project-card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#pro-git{
+    position: absolute;
+    color: white;
+    bottom: 12px;
+   height: 25px;
+    display: grid;
+    place-items:center;
+    left: 100px;
+    padding: 4px;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+    transition: all .5s;
+}
+.project-card:hover #pro-git{
+    display: block;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.contact-form-4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.Contact-main{
+    margin-top:100px
+}
+.contact-inp{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    margin-top: 10px;
+}
+.contact-inp>input{
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: linear .2s;
+}
+.contact-inp>input:focus{
+    border-bottom: 2px solid var(--green-bg);
+}
+.contact-inp>label{
+    color: rgb(195, 194, 194);
+    font-weight: bold;
+    font-style: italic;
+}
+.contact-inp>label>span{
+    color: red;
+}
+.message{
+    width: 100%;
+}
+.message>textarea{
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all .2s;
+}
+.message>textarea:focus{
+    border: 2px solid var(--green-bg);
+    box-shadow: 2px 2px 2px white;
+}
+.Contact-main>form>button{
+    background-color: var(--green-bg);
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:1500px) {
+    .main-profilecard{
+       position:static;
+    }
+    .Home-intro>h1{
+        font-size: 35px;
+    }
+    .about-main{
+        padding: 0;
+        margin-top: 50px;
+    }
+    .skill-card-parent{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card{
+        width: 90%;
+    }
+    .project-card>img{
+        width: 100%;
+    }
+    #progit,#protype{
+        bottom:100px
+    }
+}
