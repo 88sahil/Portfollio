@@ -25,10 +25,10 @@ const Projects=()=>{
                 {
                     projects.map((pro)=>(
                      <div >
-                         <a className="project-card">
+                         <a className="project-card" href={pro.projectlink}>
                             <img src={pro.coverPhoto}></img>
                             <a id="pro-type">{pro.type}</a>
-                            <a id="pro-git" href={pro.gith}><GitHubIcon/></a>
+                            <a id="pro-git" href={pro.githublink}><GitHubIcon/></a>
                         </a>
                         <br></br>
                         <strong style={{fontStyle:'italic',marginLeft:'15px',padding:'4px'}}>{pro.title}</strong>
