@@ -7,7 +7,7 @@ const AddProject=()=>{
     const {register,handleSubmit} = useForm()
     const uploadphoto=async(img)=>{
       try{
-        let res = await axios.post(`${import.meta.env.VITE_server}/upload`,{photo:img},{
+        let res = await axios.post(`https://portfollio-dcrq.onrender.com/api/project/upload`,{photo:img},{
             withCredentials:true,
             headers:{
                 "Content-Type":'multipart/form-data'
@@ -24,7 +24,7 @@ const AddProject=()=>{
             data.coverPhoto = photodetail.data.resp.url
             data.coverphotoid = photodetail.data.resp.public_id
 
-            let response = await axios.post(`${import.meta.env.VITE_server}/addProject`,data,{withCredentials:true})
+            let response = await axios.post(`https://portfollio-dcrq.onrender.com/api/project/addProject`,data,{withCredentials:true})
             if(response.data){
                 alert("successfully added")
             }

@@ -4,7 +4,7 @@ const Deleteproject=()=>{
     const [project,setproject] = useState([])
     const getProject = async()=>{
         try{
-            let res = await axios.get(`${import.meta.env.VITE_server}/allprojects`,{withCredentials:true})
+            let res = await axios.get(`https://portfollio-dcrq.onrender.com/api/project/allprojects`,{withCredentials:true})
             setproject(res.data.projects)
         }catch(err){
             console.log(err)
@@ -12,7 +12,7 @@ const Deleteproject=()=>{
     }
     const handledelte=async(id)=>{
         try{
-            let res = await axios.delete(`${import.meta.env.VITE_server}/delete/${id}`,{withCredentials:true})
+            let res = await axios.delete(`https://portfollio-dcrq.onrender.com/api/project/delete/${id}`,{withCredentials:true})
             if(res.data){
                 alert('successfully deleted')
             }

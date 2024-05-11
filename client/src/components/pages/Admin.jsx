@@ -4,11 +4,10 @@ import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
 import '../components.css'
 const Admin=()=>{
-    console.log(`${import.meta.env.VITE_server}/auth?password=sahil`)
     const navigate = useNavigate()
     const {handleSubmit,register} = useForm()
     const authentication =(data)=>{
-     axios.get(`${import.meta.env.VITE_server}/auth?password=${data.password}`,{withCredentials:true}).then(res=>{
+     axios.get(`https://portfollio-dcrq.onrender.com/api/project/auth?password=${data.password}`,{withCredentials:true}).then(res=>{
         if(res.data.granted){
             navigate('/adminpage')
         }

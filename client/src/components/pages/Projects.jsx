@@ -8,7 +8,7 @@ const Projects=()=>{
     const [projects,setprojects] = useState([])
     const getProject = async()=>{
         try{
-            let res = await axios.get(`${import.meta.env.VITE_server}/allprojects`,{withCredentials:true})
+            let res = await axios.get(`https://portfollio-dcrq.onrender.com/api/project/allprojects`,{withCredentials:true})
             setprojects(res.data.projects)
         }catch(err){
             console.log(err)
