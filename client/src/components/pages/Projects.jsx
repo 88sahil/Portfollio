@@ -22,19 +22,24 @@ const Projects=()=>{
             <PageLabel name={"Portfollio"} icon={<WorkIcon/>} />
             <p style={{fontSize:'35px'}}>Featured <span style={{color:"var(--green-bg)"}}>Projects</span></p>
             <div className="projects">
-                {
-                    projects.map((pro)=>(
-                     <div >
-                         <a className="project-card" href={pro.projectlink}>
-                            <img src={pro.coverPhoto}></img>
-                            <a id="pro-type">{pro.type}</a>
-                            <a id="pro-git" href={pro.githublink}><GitHubIcon/></a>
-                        </a>
-                        <br></br>
-                        <strong style={{fontStyle:'italic',marginLeft:'15px',padding:'4px'}}>{pro.title}</strong>
-                    </div>
-
-                    ))
+                {  
+                    projects.length>0? (
+                        projects.map((pro)=>(
+                            <div >
+                                <a className="project-card" href={pro.projectlink}>
+                                   <img src={pro.coverPhoto}></img>
+                                   <a id="pro-type">{pro.type}</a>
+                                   <a id="pro-git" href={pro.githublink}><GitHubIcon/></a>
+                               </a>
+                               <br></br>
+                               <strong style={{fontStyle:'italic',marginLeft:'15px',padding:'4px'}}>{pro.title}</strong>
+                           </div>
+       
+                           ))
+                    ):(
+                        <span class="loader"></span>
+                    )
+                  
                 }
             </div>
         </div>
