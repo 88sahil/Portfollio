@@ -524,3 +524,20 @@
         bottom:100px
     }
 }
+@media screen and (max-width:400px) {
+    .Home-intro>h1{
+        font-size: 25px;
+    }
+    .skill-card-childs{
+        width: 120px;
+        height: 120px;
+    }
+    .skill-card-childs>p{
+        margin-bottom: 15px;
+    }
+    .skill-child-img>img{
+        width: 50px;
+        height: 50px;
+    }
+
+}
