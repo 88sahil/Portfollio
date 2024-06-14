@@ -51,7 +51,6 @@ module.exports.deleteproject = checkAsync(async(req,res,next)=>{
 })
 module.exports.uploadphoto=checkAsync(async(req,res,next)=>{
     let file = req.file.path
-    console.log(req.file)
     if(!file) return next(new AppError("upload kar",400));
     let resp = await uploader(file)
     if(!resp) return next(new AppError('nathi thyo'),500);

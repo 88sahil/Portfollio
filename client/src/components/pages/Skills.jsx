@@ -4,7 +4,7 @@ import PageLabel from "../PageLabel";
 import gsap from "gsap";
 import {useGSAP} from '@gsap/react'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import {html,css,js,reactic, tailwind, sass, node, socket, express, mongo, sql, boot, material, github, figma, java} from '../../assets/export'
+import {html,css,js,reactic,typescript,aws, tailwind, sass, node, socket, express, mongo, sql, boot, material, github, figma, java} from '../../assets/export'
 const Skills=()=>{
     let skills=[
         {
@@ -18,6 +18,9 @@ const Skills=()=>{
         {
             name:'javascipt',
             img:js
+        },{
+            name:"typescipt",
+            img:typescript
         },
         {
             name:'react',
@@ -34,6 +37,10 @@ const Skills=()=>{
         {
             name:'node js',
             img:node
+        },
+        {
+            name:"aws",
+            img:aws
         },{
             name:'Java',
             img:java

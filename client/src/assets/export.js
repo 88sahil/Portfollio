@@ -14,7 +14,9 @@ import boot from './bootstrap.png'
 import material from './material.png'
 import express from './express.png'
 import socket from './socket.png'
+import typescript from './typescript.png'
+import aws from './aws.png'
 export {
     sql,java,figma,github,material,boot,mongo,tailwind
-    ,js,css,node,reactic,sass,html,express,socket
+    ,js,css,node,reactic,sass,html,express,socket,typescript,aws
 }
