@@ -10,7 +10,7 @@ const Home=()=>{
         gsap.from('.Home-intro>h1,.Home-intro-small>p',{opacity:0,scrollTrigger:true,y:-50,duration:1})
     })
     const handleclick =()=>{
-        let link = "https://drive.google.com/file/d/1ZQ8C2lcUtzZ9AnPPRA_-HE_PN02HYdTU/view?usp=sharing";
+        let link = "https://drive.google.com/file/d/1gutpo7Kwrave-UNMIdYkPPveoDTox_tE/view?usp=sharing";
         window.location.href = link;
     }
     gsap.from('.Home-intro',{color:'red',duration:5})
